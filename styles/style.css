@@ -14,7 +14,7 @@
 :root{
   --clr-output-font-family: 'Orbitron', sans-serif;
   --crl-cal-bg: #14213d ;
-  --crl-orange: #eb5e28;
+  --crl-orange: #f9544c;
   --crl-white: #ffffff;
   --crl-black:#000000;
 }
@@ -26,37 +26,51 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #fff;
-}
-
-/* global css */
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
+  background-color: var(--crl-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   max-width: 1140px;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin: 140px auto;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--crl-cal-bg); */
 }
 
-.btn {
+.cal-output{
+  width: 100%;
+  padding: 1rem;
+  /* border: 2px solid var(--crl-cal-bg); */
+  text-align: end;
+  background-color: #1c2042;
+  border-radius: 3px;
+}
+
+.cal-output span{
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--clr-output-font-family);
+  color: var(--crl-white);
+}
+
+button {
+  width: 100px;
+  height: 70px;
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 3px;
   padding: 0.5rem 1.5rem;
   margin-top: 0.5rem;
   text-transform: capitalize;
   font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
-  /* customize */
   background-color: #1c2042;
-  color: white;
+  color: var(--crl-white);
   border: 2px solid #1c2042;
 }
