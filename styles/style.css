@@ -73,4 +73,25 @@ button {
   background-color: #1c2042;
   color: var(--crl-white);
   border: 2px solid #1c2042;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1c2042;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  background-color: #1c2042;
+  color: var(--crl-white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-clear{
+color: var(--crl-orange);
+}
+
+.operator{
+  color: cyan;
 }
